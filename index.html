@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>En-Chuan Chen — Computer Vision & Multimedia Research</title>
+<meta name="description" content="En-Chuan Chen — M.S. student in Computer Science, National Central University. Research in multi-object tracking, video frame interpolation, and multimedia signal processing.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔬</text></svg>">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">EC</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research &amp; Projects</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg id="iconSun" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 4.5a1 1 0 0 1-1-1V2a1 1 0 1 1 2 0v1.5a1 1 0 0 1-1 1Zm0 15a1 1 0 0 1 1 1V22a1 1 0 1 1-2 0v-1.5a1 1 0 0 1 1-1ZM4.5 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1.5a1 1 0 0 1 1 1Zm18 0a1 1 0 0 1-1 1h-1.5a1 1 0 1 1 0-2H21a1 1 0 0 1 1 1ZM6.34 6.34a1 1 0 0 1-1.41 0L3.87 5.28a1 1 0 1 1 1.41-1.41l1.06 1.06a1 1 0 0 1 0 1.41Zm12.73 12.73a1 1 0 0 1-1.41 0l-1.06-1.06a1 1 0 1 1 1.41-1.41l1.06 1.06a1 1 0 0 1 0 1.41ZM6.34 17.66l-1.06 1.06a1 1 0 1 1-1.41-1.41l1.06-1.06a1 1 0 1 1 1.41 1.41Zm12.73-12.73L18.01 6a1 1 0 1 1-1.41-1.41l1.06-1.06a1 1 0 1 1 1.41 1.41ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Z"/></svg>
+        <svg id="iconMoon" viewBox="0 0 24 24" width="18" height="18" style="display:none"><path fill="currentColor" d="M21.75 15.5A9.72 9.72 0 0 1 12.9 22 9.75 9.75 0 0 1 3 12a9.72 9.72 0 0 1 6.5-9.18.5.5 0 0 1 .64.62A8.25 8.25 0 0 0 20.13 14.87a.5.5 0 0 1 .62.63Z"/></svg>
+      </button>
+      <button id="menuToggle" class="icon-btn hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>En-Chuan Chen<span class="accent">.</span></h1>
+      <p class="hero-sub">M.S. Student in Computer Science & Information Engineering<br>
+      National Central University · Researcher at Academia Sinica</p>
+      <p class="hero-desc">
+        I work on multi-object tracking, video frame interpolation, and medical image analysis —
+        building models that make machines see moving things more reliably.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+        <a href="Resume_Enquanc.pdf" class="btn btn-outline" target="_blank" rel="noopener">View Résumé</a>
+      </div>
+      <div class="hero-links">
+        <a href="mailto:0122herbie@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Zm2.2.2 7.8 6.1 7.8-6.1H4.2ZM20 8.3l-7.4 5.8a1 1 0 0 1-1.2 0L4 8.3V18h16V8.3Z"/></svg>
+        </a>
+        <a href="https://github.com/enquanc" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.66.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span></span> scroll
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-inner">
+      <p class="kicker">01 — About</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-photo">
+          <img src="assets/img/profile.jpg" alt="En-Chuan Chen">
+        </div>
+        <div class="about-content">
+          <p class="about-lede">
+            I'm a Master's student in Computer Science at National Central University and a
+            Research Assistant at Academia Sinica's Institute of Information Science.
+          </p>
+          <p class="about-desc">
+            My work sits at the intersection of computer vision and applied mathematics — from
+            multi-object tracking and video frame interpolation to medical image segmentation.
+            I enjoy taking a research idea from a whiteboard sketch to a working, measurable system,
+            and I'm always looking for the next hard problem to get curious about.
+          </p>
+        </div>
+      </div>
+
+      <div class="skills-grid about-skills">
+        <div class="skill-group">
+          <h4>Traits</h4>
+          <div class="chip-list">
+            <span class="trait">Logical</span>
+            <span class="trait">Collaborative</span>
+            <span class="trait">Curious</span>
+            <span class="trait">Critical Thinking</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Core Strengths</h4>
+          <div class="chip-list">
+            <span class="chip chip-accent">Data Structures</span>
+            <span class="chip chip-accent">Algorithms</span>
+            <span class="chip chip-accent">Data Analysis</span>
+            <span class="chip chip-accent">Mathematical Ability</span>
+            <span class="chip chip-accent">Cross-domain Experience</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Focus Areas</h4>
+          <div class="chip-list">
+            <span class="chip">Machine Learning</span>
+            <span class="chip">Deep Learning</span>
+            <span class="chip">Computer Vision</span>
+            <span class="chip">Software Engineering</span>
+            <span class="chip">Database Management</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4>Languages &amp; Frameworks</h4>
+          <div class="chip-list">
+            <span class="chip">Python</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">Flask</span>
+            <span class="chip">SQL</span>
+            <span class="chip">AWS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section alt">
+    <div class="section-inner">
+      <p class="kicker">02 — Education</p>
+      <h2 class="section-title">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>National Central University</h3>
+              <span class="timeline-date">Sep 2025 – Expected Jun 2027</span>
+            </div>
+            <p class="timeline-role">M.S. in Computer Science and Information Engineering</p>
+            <p class="timeline-loc">Taoyuan, Taiwan · GPA 4.30 / 4.30 · Multimedia Signal Process (MSP) Lab</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-head">
+              <h3>National Chung Hsing University</h3>
+              <span class="timeline-date">Sep 2021 – Jun 2025</span>
+            </div>
+            <p class="timeline-role">B.S. in Applied Mathematics (Minor: Computer Science and Engineering)</p>
+            <p class="timeline-loc">Taichung, Taiwan · GPA 3.97 / 4.30</p>
+            <ul class="badge-list">
+              <li class="badge">Outstanding Graduating Student — sole recipient, department</li>
+              <li class="badge">Academic Achievement Award ×4</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <p class="kicker">03 — Experience</p>
+      <h2 class="section-title">Research Experience</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card-head">
+            <h3>Graduate Student Researcher <span class="tag">Co-advised</span></h3>
+            <span class="card-date">Sep 2025 – Present</span>
+          </div>
+          <p class="card-org">Multimedia Signal Process (MSP) Lab, National Central University · Taipei, Taiwan</p>
+          <p class="card-body">Advisor: Prof. Po-Chyi Su</p>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Research Assistant</h3>
+            <span class="card-date">Sep 2024 – Present</span>
+          </div>
+          <p class="card-org">MT Lab, Institute of Information Science, Academia Sinica · Taipei, Taiwan</p>
+          <p class="card-body">Advisor: Chien-Yao Wang</p>
+          <p class="card-body">Cross-institutional research on biological multi-object tracking and medical imaging.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Research Intern</h3>
+            <span class="card-date">Jul 2024 – Aug 2024</span>
+          </div>
+          <p class="card-org">Summer Intern, Institute of Information Science, Academia Sinica · Taipei, Taiwan</p>
+          <p class="card-body">Advisor: Chien-Yao Wang</p>
+          <p class="card-body">Research on multimodal models.</p>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Undergraduate Student Researcher</h3>
+            <span class="card-date">Jul 2023 – Feb 2024</span>
+          </div>
+          <p class="card-org">NSTC Undergraduate Research Project · Taichung, Taiwan</p>
+          <p class="card-body">Advisor: Hung-Hsu Tsai</p>
+          <p class="card-body">Web API &amp; database system for Taiwan dairy farm productivity analysis.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="section alt">
+    <div class="section-inner">
+      <p class="kicker">04 — Research &amp; Projects</p>
+      <h2 class="section-title">Research &amp; Projects</h2>
+      <div class="research-feature">
+        <div class="research-meta">
+          <span class="pill">2026 ICME</span>
+          <span class="research-time">Sep 2025 – Present</span>
+        </div>
+        <h3>TAFI: Temporal Augmentation with Frame Interpolation for Multi-Object Tracking</h3>
+        <p class="research-advisors">Advisors: Chien-Yao Wang, Po-Chyi Su</p>
+        <p class="research-desc">
+          A novel, training-free architecture that overcomes low-frame-rate limitations in multi-object
+          tracking (MOT). TAFI uses Video Frame Interpolation (VFI) to generate intermediate frames,
+          repairing the trajectory associations that low frame rates tend to break — without retraining
+          the tracker or the detector.
+        </p>
+        <div class="stat-row">
+          <div class="stat">
+            <span class="stat-num">+14.3</span>
+            <span class="stat-label">HOTA on ByteTrack<br>(sampling interval 30)</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">+8.8</span>
+            <span class="stat-label">HOTA on ByteTrack<br>(sampling interval 10)</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">0</span>
+            <span class="stat-label">Extra training required<br>(training-free design)</span>
+          </div>
+        </div>
+        <p class="research-desc research-note">
+          Evaluated on top of both ByteTrack and CenterTrack across multiple VFI backbones (FILM, RIFE, SVD),
+          consistently improving HOTA, IDF1 and MOTA while reducing identity switches versus the baselines.
+        </p>
+        <div class="research-tags">
+          <span>Multi-Object Tracking</span>
+          <span>Video Frame Interpolation</span>
+          <span>Training-free</span>
+          <span>Computer Vision</span>
+        </div>
+      </div>
+
+      <h4 class="group-label">Additional Research</h4>
+      <div class="cards research-cards">
+        <article class="card">
+          <div class="card-head">
+            <h3>Cow Production Efficiency Analysis System</h3>
+            <span class="card-date">Jul 2023 – Feb 2024</span>
+          </div>
+          <p class="card-org">NSTC Undergraduate Research Project · Project No. 112-2813-C-005-039-E</p>
+          <p class="card-body">
+            Designed and built a full-stack system to collect and analyze Taiwan's dairy farm data:
+            MySQL database schema and construction, a responsive (RWD) web frontend, a Flask-based
+            API/backend, and Python models for productivity prediction and classification across
+            three case studies (parity, days in milk, farm).
+          </p>
+          <div class="research-tags">
+            <span>MySQL</span>
+            <span>Flask</span>
+            <span>RWD Web API</span>
+            <span>Regression &amp; Classification</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Medical Image Segmentation &amp; Mouse Tracking</h3>
+          </div>
+          <p class="card-org">Academia Sinica · Inter-institute collaboration with ICOB &amp; IMB</p>
+          <p class="card-body">
+            Built a SAM2 + Grounding DINO pipeline — text-prompted detection, mask/bounding-box
+            inference, and an NMS + IoU consistency check — to tackle two very different domains:
+            high-resolution medical images with limited annotation, and mouse tracking videos with
+            zero annotation, similar appearance, and frequent occlusion.
+          </p>
+          <div class="research-tags">
+            <span>SAM2</span>
+            <span>Grounding DINO</span>
+            <span>Segmentation</span>
+            <span>Multi-Object Tracking</span>
+          </div>
+        </article>
+      </div>
+
+      <h4 class="group-label">Projects</h4>
+      <div class="project-grid">
+        <article class="project-card">
+          <h4>Course Management System Design</h4>
+          <p class="project-course">Introduction to Database Management System</p>
+          <div class="research-tags">
+            <span>SQL</span>
+            <span>Flask</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h4>NBME — Score Clinical Patient Notes</h4>
+          <p class="project-course">Introduction to Machine Learning</p>
+          <p class="card-body">
+            Fine-tuned BERT to locate clinical-feature mentions in free-text patient notes,
+            with EDA over feature distributions across cases and evaluation on accuracy,
+            precision, recall and F1.
+          </p>
+          <div class="research-tags">
+            <span>NLP</span>
+            <span>BERT</span>
+            <span>Fine-tuning</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h4>Brain Tumor Segmentation</h4>
+          <p class="project-course">Medical Data and Clinical Appliances</p>
+          <div class="research-tags">
+            <span>2D/3D U-Net</span>
+            <span>Medical Imaging</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h4>Breast Cancer Semantic Segmentation</h4>
+          <p class="project-course">Introduction to Deep Learning (EMI Course)</p>
+          <div class="research-tags">
+            <span>Attention U-Net</span>
+            <span>Semantic Segmentation</span>
+          </div>
+        </article>
+
+        <article class="project-card project-card-wide">
+          <h4>Animate Anything</h4>
+          <p class="project-course">Cloud Computing Platforms and Applications (EMI Course)</p>
+          <p class="card-body">
+            An anime-style image generator deployed on AWS: Stable Diffusion + ControlNet + LoRA +
+            LCM for fast CPU inference, served through S3 (static frontend), an Application Load
+            Balancer, an auto-scaled EC2 cluster, and CloudWatch monitoring. Users can upload a
+            photo, generate a stylized result, and optionally share it to a public gallery.
+          </p>
+          <div class="research-tags">
+            <span>AWS (S3, ALB, EC2, ASG, CloudWatch)</span>
+            <span>Diffusion Model</span>
+            <span>ControlNet</span>
+            <span>LoRA</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="awards" class="section">
+    <div class="section-inner">
+      <p class="kicker">05 — Honors</p>
+      <h2 class="section-title">Awards & Honors</h2>
+      <div class="award-grid">
+        <div class="award">
+          <span class="award-year">2024</span>
+          <h4>Excellent Work</h4>
+          <p>NUST Science Paper Competition</p>
+        </div>
+        <div class="award">
+          <span class="award-year">2022</span>
+          <h4>Finalist</h4>
+          <p>IBMD — Intelligent Manufacturing and Big Data Analytics Contest</p>
+        </div>
+        <div class="award">
+          <span class="award-year">2021</span>
+          <h4>Silver</h4>
+          <p>NCHU Program Contest (Advanced)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="section-inner">
+      <p class="kicker">06 — Contact</p>
+      <h2 class="section-title">Let's talk</h2>
+      <p class="contact-desc">
+        Open to research collaborations, discussions on computer vision & multimedia systems,
+        or just a good conversation about MOT and video understanding.
+      </p>
+      <div class="contact-grid">
+        <a class="contact-item" href="mailto:0122herbie@gmail.com">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Zm2.2.2 7.8 6.1 7.8-6.1H4.2ZM20 8.3l-7.4 5.8a1 1 0 0 1-1.2 0L4 8.3V18h16V8.3Z"/></svg>
+          <span>0122herbie@gmail.com</span>
+        </a>
+        <a class="contact-item" href="https://github.com/enquanc" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.66.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+          <span>github.com/enquanc</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <p>&copy; <span id="year"></span> En-Chuan Chen. Built with plain HTML, CSS & JS.</p>
+    <a href="#top" class="back-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
