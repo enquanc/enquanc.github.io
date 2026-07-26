@@ -197,7 +197,7 @@
           </div>
           <p class="card-org">Multimedia Technology (MT) Lab, Institute of Information Science, Academia Sinica · Taipei, Taiwan</p>
           <p class="card-body">Advisor: Chien-Yao Wang</p>
-          <p class="card-body">Cross-institutional research on biological multi-object tracking and medical imaging, integrating foundation models such as SAM2 and Grounding DINO for segmentation and detection.</p>
+          <p class="card-body">Cross-institutional research on biological multi-object tracking and medical imaging, combining vision foundation models and image registration techniques for detection and segmentation.</p>
         </article>
 
         <article class="card">
@@ -260,6 +260,7 @@
         <div class="research-tags">
           <span>Multi-Object Tracking</span>
           <span>Video Frame Interpolation</span>
+          <span>Video Diffusion</span>
           <span>Training-free</span>
           <span>Computer Vision</span>
         </div>
@@ -273,82 +274,77 @@
             <span class="card-date">Jul 2023 – Feb 2024</span>
           </div>
           <p class="card-org">NSTC Undergraduate Research Project · Project No. 112-2813-C-005-039-E</p>
+          <p class="research-advisors">Advisor: Hung-Hsu Tsai</p>
           <p class="card-body">
             Designed and built a full-stack system to collect and analyze Taiwan's dairy farm data:
-            MySQL database schema and construction, a responsive (RWD) web frontend, a Flask-based
-            API/backend, and Python models for productivity prediction and classification across
-            three case studies (parity, days in milk, farm).
+            MySQL database schema and construction, a Responsive Web Design (RWD) frontend, a
+            Flask-based API/backend, and Python models for productivity prediction and classification
+            across different case studies (parity, days in milk, farm).
           </p>
           <div class="research-tags">
             <span>MySQL</span>
             <span>Flask</span>
             <span>RWD Web API</span>
-            <span>Regression &amp; Classification</span>
+            <span>Machine Learning</span>
           </div>
         </article>
 
         <article class="card">
           <div class="card-head">
-            <h3>Medical Image Segmentation &amp; Mouse Tracking</h3>
+            <h3>Medical Image Segmentation</h3>
           </div>
-          <p class="card-org">Academia Sinica · Inter-institute collaboration with ICOB &amp; IMB</p>
+          <p class="card-org">Institute of Information Science (IIS), Academia Sinica · Inter-institute collaboration with Institute of Cellular and Organismic Biology (ICOB)</p>
           <p class="card-body">
-            Built a SAM2 + Grounding DINO pipeline — text-prompted detection, mask/bounding-box
-            inference, and an NMS + IoU consistency check — to tackle two very different domains:
-            high-resolution medical images with limited annotation, and mouse tracking videos with
-            zero annotation, similar appearance, and frequent occlusion.
+            Combined a registration model with vision foundation models to segment specific
+            anatomical structures in medical images under limited data and even less annotation.
+          </p>
+          <div class="research-tags">
+            <span>Image Registration</span>
+            <span>Vision Foundation Models</span>
+            <span>Segmentation</span>
+            <span>Medical Imaging</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3>Mice Tracking</h3>
+          </div>
+          <p class="card-org">Institute of Information Science (IIS), Academia Sinica · Inter-institute collaboration with Institute of Molecular Biology (IMB)</p>
+          <p class="card-body">
+            Built a zero-annotation pipeline combining SAM2 and Grounding DINO to track and record
+            mice's interactions and movement trajectories, with a UI for manual correction to
+            handle extremely similar appearance and frequent occlusion.
           </p>
           <div class="research-tags">
             <span>SAM2</span>
             <span>Grounding DINO</span>
-            <span>Segmentation</span>
             <span>Multi-Object Tracking</span>
+            <span>Zero-Shot</span>
           </div>
         </article>
       </div>
 
       <h4 class="group-label">Projects</h4>
       <div class="project-grid">
-        <article class="project-card">
-          <h4>Course Management System Design</h4>
-          <p class="project-course">Introduction to Database Management System</p>
-          <div class="research-tags">
-            <span>SQL</span>
-            <span>Flask</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h4>NBME — Score Clinical Patient Notes</h4>
-          <p class="project-course">Introduction to Machine Learning</p>
+        <article class="project-card project-card-wide">
+          <h4>PPI Interactor Design</h4>
+          <p class="project-course">Generative Artificial Intelligence and Foundation Models in Bioinformatics: Theory and Applications</p>
           <p class="card-body">
-            Fine-tuned BERT to locate clinical-feature mentions in free-text patient notes,
-            with EDA over feature distributions across cases and evaluation on accuracy,
-            precision, recall and F1.
+            A three-stage generative pipeline for de novo protein-protein interaction (PPI)
+            design: a GraphSAGE-based GNN trained on ESM-2 embeddings to predict interactions,
+            an autoregressive Transformer (mini-GPT) to generate novel protein sequences, and a
+            ranking + ESMFold folding-validation stage that filters candidates into exportable
+            FASTA/PDB structures.
           </p>
           <div class="research-tags">
-            <span>NLP</span>
-            <span>BERT</span>
-            <span>Fine-tuning</span>
+            <span>GraphSAGE</span>
+            <span>ESM-2</span>
+            <span>Transformer</span>
+            <span>ESMFold</span>
+            <span>Protein Design</span>
           </div>
-        </article>
-
-        <article class="project-card">
-          <h4>Brain Tumor Segmentation</h4>
-          <p class="project-course">Medical Data and Clinical Appliances</p>
-          <div class="research-tags">
-            <span>2D/3D U-Net</span>
-            <span>Medical Imaging</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h4>Breast Cancer Semantic Segmentation</h4>
-          <p class="project-course">Introduction to Deep Learning (EMI Course)</p>
-          <div class="research-tags">
-            <span>Attention U-Net</span>
-            <span>Semantic Segmentation</span>
-          </div>
+          <a class="project-link" href="https://github.com/enquanc/ppi-interactor-design" target="_blank" rel="noopener">View on GitHub →</a>
         </article>
 
         <article class="project-card project-card-wide">
@@ -365,7 +361,73 @@
             <span>Diffusion Model</span>
             <span>ControlNet</span>
             <span>LoRA</span>
+            <span>LCM</span>
           </div>
+          <span class="project-link project-link-pending">Code coming soon</span>
+        </article>
+
+        <article class="project-card">
+          <h4>Breast Cancer Semantic Segmentation</h4>
+          <p class="project-course">Introduction to Deep Learning (EMI Course)</p>
+          <p class="card-body">
+            Implemented U-Net and Attention U-Net for semantic segmentation on the BCSS (Breast
+            Cancer Semantic Segmentation) dataset, training and evaluating both 3-class and
+            22-class tissue segmentation configurations.
+          </p>
+          <div class="research-tags">
+            <span>U-Net</span>
+            <span>Attention U-Net</span>
+            <span>Semantic Segmentation</span>
+          </div>
+          <a class="project-link" href="https://github.com/enquanc/BCSS_U-Net" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="project-card">
+          <h4>NBME — Score Clinical Patient Notes</h4>
+          <p class="project-course">Introduction to Machine Learning</p>
+          <p class="card-body">
+            To help ease the burden on healthcare capacity, fine-tuned BERT to locate
+            clinical-feature mentions in free-text patient notes, with Exploratory Data Analysis
+            (EDA) over feature distributions across cases and evaluation on accuracy, precision,
+            recall and F1.
+          </p>
+          <div class="research-tags">
+            <span>NLP</span>
+            <span>BERT</span>
+            <span>Fine-tuning</span>
+          </div>
+          <a class="project-link" href="https://github.com/enquanc/NBME--Score-Clinical-Patient-Notes" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="project-card">
+          <h4>Brain Tumor Segmentation</h4>
+          <p class="project-course">Medical Data and Clinical Appliances</p>
+          <p class="card-body">
+            Built multiple U-Net-based segmentation models — including 2D/3D U-Net and Attention
+            U-Net — on the public BraTS2020 dataset for brain tumor segmentation.
+          </p>
+          <div class="research-tags">
+            <span>2D/3D U-Net</span>
+            <span>Attention U-Net</span>
+            <span>BraTS2020</span>
+            <span>Medical Imaging</span>
+          </div>
+          <span class="project-link project-link-pending">Code coming soon</span>
+        </article>
+
+        <article class="project-card">
+          <h4>Course Management System Design</h4>
+          <p class="project-course">Introduction to Database Management System</p>
+          <p class="card-body">
+            Built a lightweight course management system for secondary schools using SQL, Flask,
+            and core database design principles, digitizing class record-keeping and other
+            administrative tasks for easier browsing and management.
+          </p>
+          <div class="research-tags">
+            <span>SQL</span>
+            <span>Flask</span>
+          </div>
+          <a class="project-link" href="https://github.com/enquanc/Easy-Database-design-by-python-flask-" target="_blank" rel="noopener">View on GitHub →</a>
         </article>
       </div>
     </div>
