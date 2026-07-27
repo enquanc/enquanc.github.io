@@ -317,6 +317,7 @@ a { color: inherit; text-decoration: none; }
 }
 .about-photo img {
   width: 100%;
+  height: auto;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   border-radius: 20px;
@@ -444,7 +445,6 @@ a { color: inherit; text-decoration: none; }
   font-size: 0.78rem;
   font-weight: 700;
 }
-.research-time { color: var(--text-dim); font-size: 0.85rem; font-weight: 600; }
 .research-feature h3 { margin: 0 0 8px; font-size: 1.35rem; line-height: 1.35; font-weight: 800; }
 .research-advisors { margin: 0 0 16px; color: var(--text-dim); font-size: 0.9rem; font-style: italic; }
 .research-desc { margin: 0 0 20px; font-size: 1rem; }
